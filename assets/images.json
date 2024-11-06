@@ -1,0 +1,14 @@
+{
+  "homepage": {
+    "mainImage": "https://static.wixstatic.com/media/4c8d80_294631cf738445eca817032340ca1409~mv2.jpg/v1/fill/w_1459,h_1197,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4c8d80_294631cf738445eca817032340ca1409~mv2.jpg"
+  },
+  "projectSection": {
+    "envox": "https://static.wixstatic.com/media/4c8d80_579f45d90ca24bb794e8f73650b4cf95~mv2.png/v1/fill/w_668,h_526,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Group%209.png",
+    "swavya": "https://static.wixstatic.com/media/4c8d80_413ae52702f74544876447b4aa5dd58f~mv2.png/v1/fill/w_346,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4c8d80_413ae52702f74544876447b4aa5dd58f~mv2.png",
+    "irctc": "https://static.wixstatic.com/media/4c8d80_b0f345c19b354e9b893c3cfbaaa31809~mv2.png/v1/fill/w_346,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4c8d80_b0f345c19b354e9b893c3cfbaaa31809~mv2.png",
+    "clones": "https://static.wixstatic.com/media/4c8d80_b5cc91dccbcf423fa21c13b09274e0d6~mv2.png/v1/fill/w_346,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4c8d80_b5cc91dccbcf423fa21c13b09274e0d6~mv2.png"
+  },
+  "aboutSection": {
+    "tanvi": "https://static.wixstatic.com/media/4c8d80_5ce7786fa0ae4c63a8953c5280081e24~mv2.jpg/v1/fill/w_404,h_605,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_8171_JPG.jpg"
+  }
+}
