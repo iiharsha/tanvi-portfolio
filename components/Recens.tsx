@@ -3,6 +3,14 @@ import Image from "next/image";
 import images from "@/assets/images.json";
 
 const recensboard = images.recens.heroimage;
+const secOne = images.recens.recenslogowhite;
+const secTwo = images.recens.recenslogoblack;
+const secThree = images.recens.recenspackage1;
+const secFour = images.recens.recenspackage2;
+const secFive = images.recens.recensthankyou1;
+const secSix = images.recens.recensthankyou2;
+const secSeven = images.recens.recenstag;
+const secEight = images.recens.recenstag2;
 
 export default function Recens() {
   return (
@@ -59,7 +67,7 @@ export default function Recens() {
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-[150px] mt-10">
             <div className="flex-1 max-w-md shadow-2xl">
               <Image
-                src="/1.png"
+                src={secOne}
                 alt="recens logo"
                 width={400}
                 height={400}
@@ -68,7 +76,7 @@ export default function Recens() {
             </div>
             <div className="flex-1 max-w-md shadow-2xl">
               <Image
-                src="/2.png"
+                src={secTwo}
                 alt="recens logo"
                 width={400}
                 height={400}
@@ -89,7 +97,7 @@ export default function Recens() {
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-[150px] mt-10">
             <div className="flex-1 max-w-md shadow-lg">
               <Image
-                src="/recenspackagewireframe.png"
+                src={secThree}
                 alt="recens logo"
                 width={800}
                 height={800}
@@ -98,7 +106,7 @@ export default function Recens() {
             </div>
             <div className="flex-1 max-w-md shadow-2xl">
               <Image
-                src="/packagedesign2.png"
+                src={secFour}
                 alt="recens logo"
                 width={800}
                 height={800}
@@ -119,7 +127,7 @@ export default function Recens() {
           <div className="flex flex-col md:flex-col justify-center items-center space-y-4 md:space-y-[40px] md:space-x-0 mt-10">
             <div className="flex-1 max-w-full shadow-2xl">
               <Image
-                src="/thankyoucard1.jpeg"
+                src={secFive}
                 alt="recens logo"
                 width={1080}
                 height={786}
@@ -128,7 +136,7 @@ export default function Recens() {
             </div>
             <div className="flex-1 max-w-full shadow-2xl">
               <Image
-                src="/thankyoucard2.jpeg"
+                src={secSix}
                 alt="recens logo"
                 width={1080}
                 height={786}
@@ -144,7 +152,7 @@ export default function Recens() {
           <div className="flex flex-col md:flex-col justify-center items-center space-y-4 md:space-y-[40px] md:space-x-0 mt-10">
             <div className="flex-1 max-w-full shadow-2xl">
               <Image
-                src="/tagspic1.jpeg"
+                src={secSeven}
                 alt="recens logo"
                 width={1080}
                 height={786}
@@ -153,7 +161,7 @@ export default function Recens() {
             </div>
             <div className="flex-1 max-w-full shadow-2xl">
               <Image
-                src="/thankyousticker.jpg"
+                src={secEight}
                 alt="recens logo"
                 width={1080}
                 height={786}
