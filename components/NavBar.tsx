@@ -33,7 +33,7 @@ export default function NavBar() {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-4 mt-10">
+            <div className="hidden sm:flex items-center space-x-4 mt-10 ml-auto">
               <Link
                 href="/"
                 className="bg-beige text-brown hover:bg-hovercolor border border-brown hover:text-xl rounded-full p-4"

@@ -79,36 +79,6 @@ export default function Recens() {
         </section>
         <section className="p-4">
           <h2 className="text-[30px] font-normal font-zcool">
-            Thank-You Cards
-          </h2>
-          <p className="font-zcool text-[20px]">
-            My Desgin for Recens&apos; thank you cards embodies gratitude with
-            style. It blends minimalism with a personal touch, ensuring each
-            recipient feels uniquely appreciated.
-          </p>
-          <div className="flex flex-col md:flex-col justify-center items-center space-y-4 md:space-y-[40px] md:space-x-0 mt-10">
-            <div className="flex-1 max-w-full shadow-2xl">
-              <Image
-                src="/thankyoucard1.jpeg"
-                alt="recens logo"
-                width={1080}
-                height={786}
-                className="object-contain w-auto h-full"
-              />
-            </div>
-            <div className="flex-1 max-w-full shadow-2xl">
-              <Image
-                src="/thankyoucard2.jpeg"
-                alt="recens logo"
-                width={1080}
-                height={786}
-                className="object-contain w-auto h-full"
-              />
-            </div>
-          </div>
-        </section>
-        <section className="p-4">
-          <h2 className="text-[30px] font-normal font-zcool">
             Package Designing
           </h2>
           <p className="font-zcool text-[20px]">
@@ -133,6 +103,36 @@ export default function Recens() {
                 width={800}
                 height={800}
                 className="object-contain w-full h-auto"
+              />
+            </div>
+          </div>
+        </section>
+        <section className="p-4">
+          <h2 className="text-[30px] font-normal font-zcool">
+            Thank-You Cards
+          </h2>
+          <p className="font-zcool text-[20px]">
+            My Desgin for Recens&apos; thank you cards embodies gratitude with
+            style. It blends minimalism with a personal touch, ensuring each
+            recipient feels uniquely appreciated.
+          </p>
+          <div className="flex flex-col md:flex-col justify-center items-center space-y-4 md:space-y-[40px] md:space-x-0 mt-10">
+            <div className="flex-1 max-w-full shadow-2xl">
+              <Image
+                src="/thankyoucard1.jpeg"
+                alt="recens logo"
+                width={1080}
+                height={786}
+                className="object-contain w-auto h-full"
+              />
+            </div>
+            <div className="flex-1 max-w-full shadow-2xl">
+              <Image
+                src="/thankyoucard2.jpeg"
+                alt="recens logo"
+                width={1080}
+                height={786}
+                className="object-contain w-auto h-full"
               />
             </div>
           </div>
