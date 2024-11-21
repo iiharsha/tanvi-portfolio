@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        beige: "#FFF2D7",
+        beige: "#FFF2D8",
         brown: "#543310",
         hovercolor: "#AF8F6F",
       },

@@ -1,92 +1,72 @@
 import React from "react";
 import images from "../assets/images.json";
+import Image from "next/image";
+
+const projects = [
+  {
+    src: images.projectSection.recens,
+    alt: "Envox project",
+    title: "Envox",
+    description: "User Focused digital experience",
+    href: "https://recens.co.in",
+  },
+  {
+    src: images.projectSection.recens,
+    alt: "Recens Brand",
+    title: "Recens Visual Identity Kit",
+    description: "Aesthetic Fashion Clothing",
+    href: "/recens",
+  },
+  {
+    src: images.projectSection.recens,
+    alt: "Recens Brand",
+    title: "Recens Visual Identity Kit",
+    description: "Aesthetic Fashion Clothing",
+    href: "/envox",
+  },
+  {
+    src: images.projectSection.recens,
+    alt: "Recens Brand",
+    title: "Recens",
+    description: "Aesthetic Fashion Clothing",
+    href: "/petalsnpromises",
+  },
+  {
+    src: images.projectSection.recens,
+    alt: "Recens Brand",
+    title: "Recens",
+    description: "Aesthetic Fashion Clothing",
+    href: "/envox",
+  },
+];
 
 export default function Work() {
   return (
-    <div className="grid grid-cols-2 grid-rows-2 gap-20">
-      <div className="overflow-hidden">
-        <a href="#" className="block text-decoration-none">
-          <div className="img-hover-zoom">
-            <img
-              src={images.projectSection.envox}
-              alt="Envox project"
-              className="w-full h-auto transition-transform duration-300"
-              style={{ maxWidth: "400px", height: "525px" }} // Adjusted size
-            />
-          </div>
-          <div className="px-4">
-            <h2 className="font-serif text-2xl text-gray-800 leading-6 font-normal mt-16 mb-6 border-b border-[#28282B]">
-              Envox
-            </h2>
-            <p className="text-gray-600 mt-[1px] pt-[3px] mb-[30px]">
-              User Focused digital experience
-            </p>
-          </div>
-        </a>
-      </div>
-
-      <div className="overflow-hidden">
-        <a href="#" className="block text-decoration-none">
-          <div className="img-hover-zoom">
-            <img
-              src={images.projectSection.swavya}
-              alt="Swavya project"
-              className="w-full h-auto transition-transform duration-300"
-              style={{ maxWidth: "400px", height: "auto" }} // Adjusted size
-            />
-          </div>
-          <div className="px-4">
-            <h2 className="font-serif text-2xl text-gray-800 leading-6 font-normal mt-16 mb-6 border-b border-[#28282B]">
-              Swavya
-            </h2>
-            <p className="text-gray-600 mt-[1px] pt-[3px] mb-[30px]">
-              Personalized Health App Design
-            </p>
-          </div>
-        </a>
-      </div>
-
-      <div className="overflow-hidden">
-        <a href="#" className="block text-decoration-none">
-          <div className="img-hover-zoom">
-            <img
-              src={images.projectSection.irctc}
-              alt="IRCTC project"
-              className="w-full h-auto transition-transform duration-300"
-              style={{ maxWidth: "400px", height: "auto" }} // Adjusted size
-            />
-          </div>
-          <div className="px-4">
-            <h2 className="font-serif text-2xl text-gray-800 leading-6 font-normal mt-16 mb-6 border-b border-[#28282B]">
-              IRCTC
-            </h2>
-            <p className="text-gray-600 mt-[1px] pt-[3px] mb-[30px]">
-              Streamlined Railway Booking Experience
-            </p>
-          </div>
-        </a>
-      </div>
-
-      <div className="overflow-hidden">
-        <a href="#" className="block text-decoration-none">
-          <div className="img-hover-zoom">
-            <img
-              src={images.projectSection.clones}
-              alt="Clones project"
-              className="w-full h-auto transition-transform duration-300"
-              style={{ maxWidth: "400px", height: "auto" }} // Adjusted size
-            />
-          </div>
-          <div className="px-4">
-            <h2 className="font-serif text-2xl text-gray-800 leading-6 font-normal mt-16 mb-6 border-b border-[#28282B]">
-              Clones
-            </h2>
-            <p className="text-gray-600 mt-[1px] pt-[3px] mb-[30px]">
-              Inuitive Familiar Interface Design
-            </p>
-          </div>
-        </a>
-      </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+      {projects.map((project, index) => (
+        <div key={index} className="overflow-hidden">
+          <a href={project.href} className="block text-decoration-none">
+            <div className="img-hover-zoom">
+              <Image
+                src={project.src}
+                alt={project.alt}
+                className="w-[700px] h-auto transition-transform duration-300 hover:scale-90"
+                width={400}
+                height={400}
+                quality={90}
+              />
+            </div>
+            <div className="px-4">
+              <h2 className="font-serif text-2xl text-black leading-6 font-normal mt-4 mb-4 border-b border-[#28282B]">
+                {project.title}
+              </h2>
+              <p className="text-brown mt-[1px] pt-[3px] mb-[30px]">
+                {project.description}
+              </p>
+            </div>
+          </a>
+        </div>
+      ))}
     </div>
   );
 }
