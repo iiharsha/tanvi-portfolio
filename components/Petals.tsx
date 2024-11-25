@@ -2,22 +2,19 @@ import React from "react";
 import Image from "next/image";
 import images from "@/assets/images.json";
 import { Video } from "./Video";
+import Interview from "./Interviews";
+import Piechart from "./Piechart";
+import UserJourneyTable from "./TablePetals";
 
-const secOne = images.petals.heroimage;
-const secTwo = images.petals.logo;
-const secThree = images.recens.recenspackage1;
-const secFour = images.recens.recenspackage2;
-const secFive = images.recens.recensthankyou1;
-const secSix = images.recens.recensthankyou2;
-const secSeven = images.recens.recenstag;
-const secEight = images.recens.recenstag2;
+const petalsheroimage = images.petals.heroimage;
+const petalslogo = images.petals.logo;
 
 export default function Petals() {
   return (
     <main>
       <div className="md:relative w-full h-[60vh] md:h-[80vh] hidden md:block">
         <Image
-          src={secOne}
+          src={petalsheroimage}
           alt="petals and promises image"
           fill
           objectFit="cover"
@@ -43,27 +40,29 @@ export default function Petals() {
         className="max-w-[22em] min-w-[18em] pb-[60px] xl:max-w-[80em] xl:min-w-[30em] h-full xl:mx-auto xl:mt-0
         sm:max-w-[60em] sm:min-w-[10em] sm::mx-auto"
       >
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4 max-w-5xl w-full">
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 max-w-5xl w-full ml-2">
           <div className="flex flex-col">
-            <h2 className="text-[30px] font-normal font-zcool">Type</h2>
+            <h2 className="text-[30px] font-normal font-zcool m-2">Type</h2>
             <p>Personal Project</p>
           </div>
           <div className="flex flex-col">
-            <h2 className="text-[30px] font-normal font-zcool">Tools</h2>
+            <h2 className="text-[30px] font-normal font-zcool m-2">Tools</h2>
             <p>Figma, Canva,Adobe Illustrator</p>
           </div>
           <div className="flex flex-col">
-            <h2 className="text-[30px] font-normal font-zcool">Timeline</h2>
+            <h2 className="text-[30px] font-normal font-zcool m-2">Timeline</h2>
             <p>August 20 - October 1, 2024</p>
           </div>
         </section>
 
-        <section className="p-4">
-          <h2 className="text-[30px] font-normal font-zcool">Logo & Design</h2>
-          <div className="flex flex-col md:flex-col justify-center items-center space-y-4 md:space-y-[40px] md:space-x-0 mt-10">
-            <div className="flex-1 max-w-full shadow-2xl">
+        <section className="p-2">
+          <h2 className="text-[30px] font-normal font-zcool ml-2">
+            Logo & Design
+          </h2>
+          <div className="flex flex-col md:flex-col justify-center items-center space-y-4 md:space-y-[40px] md:space-x-0 mt-4">
+            <div className="flex-1 max-w-full shadow-2xl ml-4">
               <Image
-                src={secTwo}
+                src={petalslogo}
                 alt="recens logo"
                 width={1000}
                 height={754}
@@ -74,10 +73,10 @@ export default function Petals() {
           <h3 className="text-center text-[21px] font-normal font-zcool">
             Logo Type : Dynamic Logo
           </h3>
-          <h2 className="text-[30px] font-normal mt-9 font-zcool">
+          <h2 className="text-[30px] font-normal mt-9 font-zcool ml-4">
             Problem Statement
           </h2>
-          <p className="p-4 text-[20px]">
+          <p className="pt-4 px-4 text-[20px]">
             Many existing flower delivery applications restrict users to
             predefined designs, offering limited opportunities for
             customization. This lack of flexibility can be particularly daunting
@@ -88,8 +87,8 @@ export default function Petals() {
             meaning or cultural significance, leading to potential
             dissatisfaction and risk of selecting inappropriate arrangements.
           </p>
-          <h2 className="text-[30px] font-normal font-zcool">Goals</h2>
-          <ul className="list-disc list-inside text-[18px]">
+          <h2 className="text-[30px] font-normal font-zcool ml-4">Goals</h2>
+          <ul className="list-disc list-inside text-[18px] pt-2 px-4">
             <li>
               Develop an innovative floral customization app that allows users
               to design bouquets with complete creative freedom.
@@ -105,95 +104,39 @@ export default function Petals() {
             </li>
           </ul>
         </section>
-        <section className="flex items-center justify-center">
+        <section className="flex items-center justify-center px-2 m-2 right-[-10rem]">
           <Video />
         </section>
         <section className="p-4">
-          <h2 className="text-[30px] font-normal font-zcool">Research</h2>
-          <p className="font-zcool text-[20px]">
-            I conducted a Google survey to focus our research and find out what
-            consumers liked to buy when they bought flowers. Our survey received
-            responses from 50 US and Indian volunteers aged 16 to 40. Based on
-            the survey results, we were CI to concentrate on certain
-            floral-related challenges. For instance, before making a purchase,
-            people said they would like to learn about flower meanings.
+          <h2 className="text-[30px] font-normal font-zcool ml-2">Research</h2>
+          <p className="font-zcool text-[20px] ml-2">
+            I ran a Google survey to narrow down our research and see
+            people&apos;s behavior and preferences when they buy flowers. A
+            total of 50 volunteers from the US and India, aged between 16 and
+            40, responded. With this, according to the survey result we were
+            able to focus on some of the floral-related problems. For example,
+            before a purchase, people said they would want to know about flower
+            meanings.
           </p>
-          <h2 className="text-[30px] font-normal font-zcool">Survey</h2>
-          <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-[150px] mt-10">
-            <div className="flex-1 max-w-md shadow-lg">
-              <Image
-                src={secThree}
-                alt="recens logo"
-                width={800}
-                height={800}
-                className="object-contain w-auto h-full"
-              />
-            </div>
-            <div className="flex-1 max-w-md shadow-2xl">
-              <Image
-                src={secFour}
-                alt="recens logo"
-                width={800}
-                height={800}
-                className="object-contain w-full h-auto"
-              />
-            </div>
-          </div>
-        </section>
-        <section className="p-4">
-          <h2 className="text-[30px] font-normal font-zcool">
-            Thank-You Cards
+          <h2 className="text-[30px] font-normal font-zcool ml-2 mb-2">
+            Survey
           </h2>
-          <p className="font-zcool text-[20px]">
-            My Desgin for Recens&apos; thank you cards embodies gratitude with
-            style. It blends minimalism with a personal touch, ensuring each
-            recipient feels uniquely appreciated.
+          <Piechart />
+        </section>
+        <section>
+          <h2 className="text-[30px] font-normal font-zcool ml-2">Interview</h2>
+          <p className="font-zcool text-[20px] ml-2">
+            We interviewed four people. They were two 20-year-old college
+            students, one 30-year-old mother, and one 25-year-old working
+            professional.
           </p>
-          <div className="flex flex-col md:flex-col justify-center items-center space-y-4 md:space-y-[40px] md:space-x-0 mt-10">
-            <div className="flex-1 max-w-full shadow-2xl">
-              <Image
-                src={secFive}
-                alt="recens logo"
-                width={1080}
-                height={786}
-                className="object-contain w-auto h-full"
-              />
-            </div>
-            <div className="flex-1 max-w-full shadow-2xl">
-              <Image
-                src={secSix}
-                alt="recens logo"
-                width={1080}
-                height={786}
-                className="object-contain w-auto h-full"
-              />
-            </div>
-          </div>
+          <Interview />
         </section>
-        <section className="p-4">
-          <h2 className="text-[30px] font-normal font-zcool">
-            Tags & Stickers
+        <section>
+          <h2 className="text-[30px] font-normal font-zcool m-4">
+            User Journey
           </h2>
-          <div className="flex flex-col md:flex-col justify-center items-center space-y-4 md:space-y-[40px] md:space-x-0 mt-10">
-            <div className="flex-1 max-w-full shadow-2xl">
-              <Image
-                src={secSeven}
-                alt="recens logo"
-                width={1080}
-                height={786}
-                className="object-contain w-auto h-full"
-              />
-            </div>
-            <div className="flex-1 max-w-full shadow-2xl">
-              <Image
-                src={secEight}
-                alt="recens logo"
-                width={1080}
-                height={786}
-                className="object-contain w-auto h-full"
-              />
-            </div>
-          </div>
+          <UserJourneyTable />
         </section>
       </div>
     </main>
