@@ -5,38 +5,38 @@ import Image from "next/image";
 const projects = [
   {
     src: images.projectSection.recens,
-    alt: "Envox project",
-    title: "Envox",
-    description: "User Focused digital experience",
-    href: "https://recens.co.in",
+    alt: "Recens Logo",
+    title: "therecens.com",
+    description: "Best Shopping Experience",
+    href: "https://therecens.com",
   },
   {
     src: images.projectSection.recens,
     alt: "Recens Brand",
     title: "Recens Visual Identity Kit",
-    description: "Aesthetic Fashion Clothing",
+    description: "Fashion Brand Aesthetics",
     href: "/recens",
   },
   {
-    src: images.projectSection.recens,
-    alt: "Recens Brand",
-    title: "Recens Visual Identity Kit",
-    description: "Aesthetic Fashion Clothing",
-    href: "/envox",
-  },
-  {
-    src: images.projectSection.recens,
-    alt: "Recens Brand",
-    title: "Recens",
-    description: "Aesthetic Fashion Clothing",
+    src: images.projectSection.petalsandpromises,
+    alt: "Petal and Promises image",
+    title: "Petals and Promises",
+    description: "Buying Flowers Made Easy",
     href: "/petalsnpromises",
   },
   {
+    src: images.projectSection.envox,
+    alt: "Envox Picture",
+    title: "Envox",
+    description: "Revamping the Envox Website",
+    href: "/envoxwork",
+  },
+  {
     src: images.projectSection.recens,
-    alt: "Recens Brand",
-    title: "Recens",
-    description: "Aesthetic Fashion Clothing",
-    href: "/envox",
+    alt: "Swavya Image",
+    title: "Swavya",
+    description: "Health Web Application",
+    href: "/swavya",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function Work() {
       {projects.map((project, index) => (
         <div key={index} className="overflow-hidden">
           <a href={project.href} className="block text-decoration-none">
-            <div className="img-hover-zoom">
+            <div className="flex items-center justify-center">
               <Image
                 src={project.src}
                 alt={project.alt}

@@ -18,7 +18,7 @@ export default function Recens() {
       <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden">
         <Image
           src={recensboard}
-          alt="San Francisco Art Book Fair"
+          alt="Recens Storefront Image"
           layout="fill"
           objectFit="cover"
           objectPosition="center"
@@ -32,7 +32,7 @@ export default function Recens() {
       >
         {/* Hero Image */}
         {/* Text Section */}
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4 max-w-5xl w-full">
+        <section className="grid grid-cols-1 justify-center items-center md:grid-cols-3 gap-8 p-4 max-w-5xl w-full">
           <div className="flex flex-col">
             <h2 className="text-[30px] font-normal font-zcool">Type</h2>
             <p>Brand Work</p>
