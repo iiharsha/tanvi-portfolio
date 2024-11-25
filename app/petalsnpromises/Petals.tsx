@@ -1,17 +1,18 @@
 import React from "react";
 import Image from "next/image";
 import images from "@/assets/images.json";
-import { Video } from "./Video";
+import Video from "./Video";
+import Pie from "./Piechart";
 import Interview from "./Interviews";
-import Piechart from "./Piechart";
 import UserJourneyTable from "./TablePetals";
+import Personas from "./UserPersonas";
 
 const petalsheroimage = images.petals.heroimage;
 const petalslogo = images.petals.logo;
 
 export default function Petals() {
   return (
-    <main>
+    <main className="w-full">
       <div className="md:relative w-full h-[60vh] md:h-[80vh] hidden md:block">
         <Image
           src={petalsheroimage}
@@ -87,7 +88,9 @@ export default function Petals() {
             meaning or cultural significance, leading to potential
             dissatisfaction and risk of selecting inappropriate arrangements.
           </p>
-          <h2 className="text-[30px] font-normal font-zcool ml-4">Goals</h2>
+          <h2 className="text-[30px] font-normal font-zcool ml-4 mt-4">
+            Goals
+          </h2>
           <ul className="list-disc list-inside text-[18px] pt-2 px-4">
             <li>
               Develop an innovative floral customization app that allows users
@@ -104,8 +107,10 @@ export default function Petals() {
             </li>
           </ul>
         </section>
-        <section className="flex items-center justify-center px-2 m-2 right-[-10rem]">
-          <Video />
+        <section className="flex items-center justify-center px-2 m-2">
+          <div className="w-full mas-w-md md:max-w-lg lg:max-w-xl ml-4">
+            <Video />
+          </div>
         </section>
         <section className="p-4">
           <h2 className="text-[30px] font-normal font-zcool ml-2">Research</h2>
@@ -118,13 +123,17 @@ export default function Petals() {
             before a purchase, people said they would want to know about flower
             meanings.
           </p>
-          <h2 className="text-[30px] font-normal font-zcool ml-2 mb-2">
+          <h2 className="text-[30px] font-normal font-zcool ml-2 mb-4 mt-4">
             Survey
           </h2>
-          <Piechart />
+          <div className="flex items-center justify-center ml-4">
+            <Pie />
+          </div>
         </section>
-        <section>
-          <h2 className="text-[30px] font-normal font-zcool ml-2">Interview</h2>
+        <section className="p-4">
+          <h2 className="text-[30px] font-normal font-zcool ml-2 mt-4 mb-4">
+            Interview
+          </h2>
           <p className="font-zcool text-[20px] ml-2">
             We interviewed four people. They were two 20-year-old college
             students, one 30-year-old mother, and one 25-year-old working
@@ -132,11 +141,39 @@ export default function Petals() {
           </p>
           <Interview />
         </section>
-        <section>
-          <h2 className="text-[30px] font-normal font-zcool m-4">
+        <section className="overflow-x-auto">
+          <h2 className="text-[30px] font-normal font-zcool ml-2 mt-4 mb-4">
             User Journey
           </h2>
           <UserJourneyTable />
+        </section>
+        <section>
+          <Personas />
+        </section>
+        <section>
+          <h2 className="text-[30px] font-normal font-zcool ml-2 mt-4 mb-4">
+            Reflection
+          </h2>
+          <p className="font-zcool text-[20px] ml-2">
+            For this floral customization app, I focused on creating a
+            user-centered design that balances personalization and simplicity. I
+            created detailed user personas spanning a wide range of ages, which
+            helped me recognize that users have diverse problems related to
+            buying flowers, including knowing how to select an appropriate
+            bouquet for a given occasion and translating flower symbolism. When
+            designing and testing usability, finally, I finally wanted to refine
+            the app in an iterative way to make it a balance between creative
+            freedom and clear guidance. Via iteration and usability testing, I
+            dialed in the app to strike a balance between creative freedom and
+            explicit instructions. It taught me about the significance of
+            emotional design and it&apos;s even more true in a place people are
+            often emotionally connected with — flowers are personal and how
+            giving them a great, accessible experience creates a fun experience
+            and adds a lot of value to the experience. This project further
+            developed my problem-solving and design skills, as well as a more
+            nuanced appreciation for what goes into designing intuitive,
+            engaging, and emotionally resonant experiences.
+          </p>
         </section>
       </div>
     </main>

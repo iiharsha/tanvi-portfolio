@@ -16,6 +16,7 @@ export default function Intro() {
           width={300}
           height={400}
           className="h-[300px] w-[300px] sm:h-[400px] sm:w-[400px] md:h-[500px] md:w-[500px] lg:h-[600px] lg:w-[600px] rounded-full object-cover"
+          priority
         />
       </div>
 

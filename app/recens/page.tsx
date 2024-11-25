@@ -1,4 +1,4 @@
-import Recens from "@/components/Recens";
+import Recens from "./Recens";
 
 export default function Work() {
   return <Recens />;

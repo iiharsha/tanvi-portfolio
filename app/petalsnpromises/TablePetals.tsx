@@ -24,7 +24,10 @@ export default function UserJourneyTable() {
       </thead>
       <tbody>
         <tr>
-          <td style={{ border: "1px solid black", padding: "8px" }}>
+          <td
+            style={{ border: "1px solid black", padding: "8px" }}
+            className="font-bold"
+          >
             Discover
           </td>
           <td style={{ border: "1px solid black", padding: "8px" }}>
@@ -48,7 +51,12 @@ export default function UserJourneyTable() {
           </td>
         </tr>
         <tr>
-          <td style={{ border: "1px solid black", padding: "8px" }}>Uses</td>
+          <td
+            style={{ border: "1px solid black", padding: "8px" }}
+            className="font-bold"
+          >
+            Uses
+          </td>
           <td style={{ border: "1px solid black", padding: "8px" }}>
             <ul>
               <li>Create an account</li>
@@ -72,7 +80,10 @@ export default function UserJourneyTable() {
           </td>
         </tr>
         <tr>
-          <td style={{ border: "1px solid black", padding: "8px" }}>
+          <td
+            style={{ border: "1px solid black", padding: "8px" }}
+            className="font-bold"
+          >
             Decision
           </td>
           <td style={{ border: "1px solid black", padding: "8px" }}>
@@ -95,7 +106,12 @@ export default function UserJourneyTable() {
           </td>
         </tr>
         <tr>
-          <td style={{ border: "1px solid black", padding: "8px" }}>Goal</td>
+          <td
+            style={{ border: "1px solid black", padding: "8px" }}
+            className="font-bold"
+          >
+            Goal
+          </td>
           <td style={{ border: "1px solid black", padding: "8px" }}>
             <ul>
               <li>Receives confirmation</li>

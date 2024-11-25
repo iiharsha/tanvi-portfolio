@@ -1,4 +1,4 @@
-export function Video() {
+export default function Video() {
   return (
     <video
       width="820"
