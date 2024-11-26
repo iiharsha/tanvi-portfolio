@@ -26,7 +26,7 @@ export default function Petals() {
       </div>
       <div className="block md:hidden">
         <Image
-          src={images.petals.heroimagebile}
+          src={images.petals.heroimagemobile}
           width={420}
           height={420}
           alt="petals and promises image"
@@ -41,21 +41,19 @@ export default function Petals() {
         className="max-w-[22em] min-w-[18em] pb-[60px] xl:max-w-[80em] xl:min-w-[30em] h-full xl:mx-auto xl:mt-0
         sm:max-w-[60em] sm:min-w-[10em] sm::mx-auto"
       >
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 max-w-5xl w-full ml-2">
-          <div className="flex flex-col">
-            <h2 className="text-[30px] font-normal font-zcool m-2">Type</h2>
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4 max-w-5xl w-full mx-auto items-center">
+          <div className="flex flex-col items-start">
+            <h2 className="text-[30px] font-normal font-zcool">Type</h2>
             <p>Personal Project</p>
           </div>
-          <div className="flex flex-col">
-            <h2 className="text-[30px] font-normal font-zcool m-2">Tools</h2>
+          <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-brown md:pl-4">
+            <h2 className="text-[30px] font-normal font-zcool">Tools</h2>
             <p>Figma, Canva,Adobe Illustrator</p>
           </div>
-          <div className="flex flex-col">
-            <h2 className="text-[30px] font-normal font-zcool m-2">Timeline</h2>
-            <p>August 20 - October 1, 2024</p>
+          <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-brown md:pl-4">
+            <h2 className="text-[30px] font-normal font-zcool">Timeline</h2>
           </div>
         </section>
-
         <section className="p-2">
           <h2 className="text-[30px] font-normal font-zcool ml-2">
             Logo & Design
@@ -107,6 +105,9 @@ export default function Petals() {
             </li>
           </ul>
         </section>
+        <h2 className="text-[30px] font-normal font-zcool ml-2 p-4">
+          Solution
+        </h2>
         <section className="flex items-center justify-center px-2 m-2">
           <div className="w-full mas-w-md md:max-w-lg lg:max-w-xl ml-4">
             <Video />

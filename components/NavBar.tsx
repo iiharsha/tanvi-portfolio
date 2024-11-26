@@ -31,40 +31,39 @@ export default function NavBar() {
                 />
               </Link>
             </div>
-
             {/* Desktop Navigation */}
             <div className="hidden sm:flex items-center space-x-4 mt-10 ml-auto">
-              <Link
-                href="/"
-                className="bg-beige text-brown hover:bg-hovercolor border border-brown hover:text-xl rounded-full p-4"
-              >
-                Work
+              <Link href="/" passHref>
+                <button className="bg-beige text-brown hover:bg-hovercolor border border-brown hover:text-xl rounded-full p-4 transition-all duration-300 ease-in-out">
+                  Work
+                </button>
               </Link>
-              <Link
-                href="/about"
-                className="bg-beige text-brown hover:bg-hovercolor border border-brown hover:text-xl rounded-full p-4"
-              >
-                About
+
+              <Link href="/about" passHref>
+                <button className="bg-beige text-brown hover:bg-hovercolor border border-brown hover:text-xl rounded-full p-4 transition-all duration-300 ease-in-out">
+                  About
+                </button>
               </Link>
+
+              {/* Wrap with anchor tag to allow target="_blank" and rel="noopener noreferrer" */}
               <Link
                 href="/tanvi-final-resume.pdf"
-                className="bg-beige text-brown hover:bg-hovercolor border border-brown hover:text-xl rounded-full p-4"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="bg-beige text-brown hover:bg-hovercolor border border-brown hover:text-xl rounded-full p-4 transition-all duration-300 ease-in-out"
               >
                 Resume
               </Link>
-            </div>
-
+            </div>{" "}
             {/* Mobile Navigation Toggle */}
             <div className="md:hidden flex items-center mt-12">
               <button
-                className="inline-flex items-center justify-center p-2 rounded-md text-brown hover:text-xl hover:border hover:border-brown"
+                className="inline-flex items-center justify-center p-2 rounded-md text-brown hover:text-xl hover:border hover:border-brown transition-all duration-300 ease-in-out"
                 onClick={toggleNavbar}
               >
                 {isClick ? (
                   <svg
-                    className="h-[30px] w-[30px]"
+                    className="h-[30px] w-[30px] transition-all duration-300 ease-in-out"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -79,7 +78,7 @@ export default function NavBar() {
                   </svg>
                 ) : (
                   <svg
-                    className="h-[30px] w-[30px]"
+                    className="h-[30px] w-[30px] transition-all duration-300 ease-in-out"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -100,26 +99,29 @@ export default function NavBar() {
 
         {/* Mobile Menu */}
         {isClick && (
-          <div className="md:hidden bg-beige">
+          <div
+            className="md:hidden bg-beige transition-all duration-300 ease-in-out transform translate-x-0"
+            style={{ transition: "transform 0.3s ease-out" }}
+          >
             <div className="px-2 pt-6 pb-3 space-y-1 sm:px-3 font-semibold text-zcool">
-              <Link
-                href="/"
-                className="text-brown block hover:bg-hovercolor hover:text-xl rounded-lg p-2"
+              <button
+                className="text-brown block hover:bg-hovercolor hover:text-xl rounded-lg p-2 transition-all duration-300 ease-in-out"
+                onClick={() => (window.location.href = "/")}
               >
                 Work
-              </Link>
-              <Link
-                href="/about"
-                className="text-brown block hover:bg-hovercolor hover:text-xl rounded-lg p-2"
+              </button>
+              <button
+                className="text-brown block hover:bg-hovercolor hover:text-xl rounded-lg p-2 transition-all duration-300 ease-in-out"
+                onClick={() => (window.location.href = "/about")}
               >
                 About
-              </Link>
-              <Link
-                href="/contact"
-                className="text-brown block hover:bg-hovercolor hover:text-xl rounded-lg p-2"
+              </button>
+              <button
+                className="text-brown block hover:bg-hovercolor hover:text-xl rounded-lg p-2 transition-all duration-300 ease-in-out"
+                onClick={() => (window.location.href = "/contact")}
               >
                 Contact
-              </Link>
+              </button>
             </div>
           </div>
         )}

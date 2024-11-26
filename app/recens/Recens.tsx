@@ -32,20 +32,21 @@ export default function Recens() {
       >
         {/* Hero Image */}
         {/* Text Section */}
-        <section className="grid grid-cols-1 justify-center items-center md:grid-cols-3 gap-8 p-4 max-w-5xl w-full">
-          <div className="flex flex-col">
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4 max-w-5xl w-full mx-auto items-center">
+          <div className="flex flex-col items-start">
             <h2 className="text-[30px] font-normal font-zcool">Type</h2>
             <p>Brand Work</p>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-brown md:pl-4">
             <h2 className="text-[30px] font-normal font-zcool">Tools</h2>
             <p>Figma, Canva, Illustrator</p>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-brown md:pl-4">
             <h2 className="text-[30px] font-normal font-zcool">Timeline</h2>
-            <p>1st November - 7st November 2024</p>
+            <p>1st November - 7th November 2024</p>
           </div>
         </section>
+        <div className="my-8 border-t border-brown"></div>
         <p className="p-4 text-[20px]">
           In this section, I have illustrated how creativity and strategic
           design led us to our logo, thank-you cards, tags, and stickers. I
@@ -53,7 +54,7 @@ export default function Recens() {
           it.
         </p>
 
-        <section className="p-4">
+        <section className="p-4 ml-4">
           <h2 className="text-[30px] font-normal font-zcool">Logo & Tagline</h2>
           <p className="font-zcool text-[20px]">
             The Recens logo utilizes Tenor Sans to convey a sense of modern
@@ -85,7 +86,8 @@ export default function Recens() {
             </div>
           </div>
         </section>
-        <section className="p-4">
+        <div className="my-8 border-t border-brown"></div>
+        <section className="p-4 ml-4">
           <h2 className="text-[30px] font-normal font-zcool">
             Package Designing
           </h2>
@@ -115,12 +117,13 @@ export default function Recens() {
             </div>
           </div>
         </section>
-        <section className="p-4">
+        <div className="my-8 border-t border-brown"></div>
+        <section className="p-4 ml-4">
           <h2 className="text-[30px] font-normal font-zcool">
             Thank-You Cards
           </h2>
           <p className="font-zcool text-[20px]">
-            My Desgin for Recens&apos; thank you cards embodies gratitude with
+            My Design for Recens&apos; thank you cards embodies gratitude with
             style. It blends minimalism with a personal touch, ensuring each
             recipient feels uniquely appreciated.
           </p>
@@ -145,7 +148,8 @@ export default function Recens() {
             </div>
           </div>
         </section>
-        <section className="p-4">
+        <div className="my-8 border-t border-brown"></div>
+        <section className="p-4 ml-4">
           <h2 className="text-[30px] font-normal font-zcool">
             Tags & Stickers
           </h2>
