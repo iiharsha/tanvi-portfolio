@@ -135,7 +135,7 @@ export default function Petals() {
           Solution
         </h2>
         <section className="flex items-center justify-center px-2 m-2">
-          <div className="w-full mas-w-md md:max-w-lg lg:max-w-xl ml-4">
+          <div className="w-full max-w-md md:max-w-lg lg:max-w-xl ml-4">
             <Video />
           </div>
         </section>

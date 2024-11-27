@@ -9,9 +9,9 @@ export default function SwavyaVideo() {
       autoPlay
       muted
       loop
-      className="border-2 border-brown rounded-lg"
+      className="border-1 border-brown rounded-lg"
     >
-      <source src="/petalsvideo.mp4" type="video/mp4" />
+      <source src="/swavyavideo.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   );

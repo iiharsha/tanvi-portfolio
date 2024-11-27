@@ -65,15 +65,15 @@ export default function SwavyaPage() {
         <section className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4 max-w-5xl w-full mx-auto items-center">
           <div className="flex flex-col items-start">
             <StaggeredFade text="Type" />
-            <LettersPullUp text="Personal Project" />
+            <LettersPullUp text="Hackathon" />
           </div>
           <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-brown md:pl-4">
             <StaggeredFade text="Tools" />
-            <LettersPullUp text="Figma, Canva, Adobe Illustrator" />
+            <LettersPullUp text="HTML, CSS, Javascript" />
           </div>
           <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-brown md:pl-4">
             <StaggeredFade text="Timeline" />
-            <LettersPullUp text="1 November - 7 November 2024" />
+            <LettersPullUp text="24hrs" />
           </div>
         </section>
         <div className="my-8 border-t border-brown"></div>
@@ -88,11 +88,18 @@ export default function SwavyaPage() {
             fitness goals.
           </p>
         </section>
-        <div className="my-8 border-t border-brown"></div>
         <section className="flex items-center justify-center px-2 m-2">
-          <div className="w-full mas-w-md md:max-w-lg lg:max-w-xl ml-4">
+          <div className="w-full max-w-md md:max-w-lg lg:max-w-xl ml-4">
             <SwavyaVideo />
           </div>
+        </section>
+        <section>
+          <p className="pt-4 px-4 text-[20px]">
+            Since this was my first project in the ui/ux field, it has a special
+            place in my career. Working on this during an ACM hackathon sparked
+            my interest in this topic. I later received a lot of appreciation
+            from my peers and the jury for my problem-solving and design skills.
+          </p>
         </section>
       </div>
     </main>

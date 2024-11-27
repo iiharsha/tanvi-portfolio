@@ -60,6 +60,7 @@ export default function Work() {
                 width={400}
                 height={400}
                 quality={90}
+                priority
               />
             </motion.div>
             <div className="px-4">

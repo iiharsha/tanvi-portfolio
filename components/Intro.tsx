@@ -44,6 +44,8 @@ export default function Intro() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          initial={{ y: -200, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
           className="mb-9 p-4 mt-4 cursor-pointer"
         >
           <EyeCatchingButton className="font-zcool text-[18px] px-6 py-4 mx-1.5 mb-9">

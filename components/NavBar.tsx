@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
+import { motion } from "motion/react";
 
 export default function NavBar() {
   const [isClick, setIsClick] = useState(false);
@@ -12,10 +13,19 @@ export default function NavBar() {
   };
 
   return (
-    <>
+    <div>
       {/* Spacer to prevent layout shift when navbar is fixed */}
       <div className="h-0" />
-      <nav className="bg-transparent fixed top-0 left-0 right-0 z-10">
+      <motion.nav
+        initial={{ y: -200, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 120,
+          damping: 12,
+        }}
+        className="bg-transparent fixed top-0 left-0 right-0 z-10"
+      >
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -125,7 +135,7 @@ export default function NavBar() {
             </div>
           </div>
         )}
-      </nav>
-    </>
+      </motion.nav>
+    </div>
   );
 }

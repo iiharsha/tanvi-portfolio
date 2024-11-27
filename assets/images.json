@@ -9,9 +9,6 @@
     "envox": "https://ik.imagekit.io/harshatanvi/envoxtemplate.webp?updatedAt=1732511818468",
     "swavya": "https://ik.imagekit.io/harshatanvi/swavyahome.webp?updatedAt=1732706575022"
   },
-  "aboutSection": {
-    "tanvi": "https://static.wixstatic.com/media/4c8d80_5ce7786fa0ae4c63a8953c5280081e24~mv2.jpg/v1/fill/w_404,h_605,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_8171_JPG.jpg"
-  },
   "recens": {
     "heroimage": "https://ik.imagekit.io/harshatanvi/recens-storefront-board.webp?updatedAt=1732036338163",
     "recenslogowhite": "https://ik.imagekit.io/harshatanvi/1_converted.webp?updatedAt=1732188200448",
@@ -24,19 +21,22 @@
     "recenstag2": "https://ik.imagekit.io/harshatanvi/thankyousticker_converted.webp?updatedAt=1732188200488"
   },
   "petals": {
-    "heroimage": "https://ik.imagekit.io/harshatanvi/petalsandpromiseshero.webp?updatedAt=1732431453604",
-    "heroimagemobile": "https://ik.imagekit.io/harshatanvi/petalsmobile.webp?updatedAt=1732517571017",
+    "heroimage": "https://ik.imagekit.io/harshatanvi/petalsheroimage.webp?updatedAt=1732729934850",
+    "heroimagemobile": "https://ik.imagekit.io/harshatanvi/petalsheroimagemobile.webp?updatedAt=1732729934631",
     "logo": "https://ik.imagekit.io/harshatanvi/petalsandpromiseslogo_converted.webp?updatedAt=1732430703303",
     "userpersona1": "https://ik.imagekit.io/harshatanvi/user%20persona1_converted.webp?updatedAt=1732558414400",
     "userpersona2": "https://ik.imagekit.io/harshatanvi/user%20persona2_converted.webp?updatedAt=1732558414370",
     "userpersona3": "https://ik.imagekit.io/harshatanvi/user%20persona3_converted.webp?updatedAt=1732558414402"
   },
   "envox": {
-    "heroimage": "https://ik.imagekit.io/harshatanvi/Envox-hero-image-desktop.webp?updatedAt=1732602422659",
-    "heroimagemobile": "https://ik.imagekit.io/harshatanvi/Envox-hero-image-mobile.webp?updatedAt=1732602422481"
+    "heroimage": "https://ik.imagekit.io/harshatanvi/envoxheroimage.webp?updatedAt=1732730354699",
+    "heroimagemobile": "https://ik.imagekit.io/harshatanvi/envoxheroimagemobile.webp?updatedAt=1732730354769"
   },
   "swavya": {
     "heroimage": "https://ik.imagekit.io/harshatanvi/swavyaheroimage.webp?updatedAt=1732706831039",
     "heroimagemobile": "https://ik.imagekit.io/harshatanvi/swavyaheroimagemobile.webp?updatedAt=1732706830849"
+  },
+  "about": {
+    "mainimage": "https://ik.imagekit.io/harshatanvi/aboutsectiontanvi_compressed.webp?updatedAt=1732730980442"
   }
 }
