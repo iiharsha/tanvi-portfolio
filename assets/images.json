@@ -6,7 +6,8 @@
   "projectSection": {
     "recens": "https://ik.imagekit.io/harshatanvi/recensvisualkit.webp?updatedAt=1732431257703",
     "petalsandpromises": "https://ik.imagekit.io/harshatanvi/petalsnpromiseshome_converted.webp?updatedAt=1732430703306",
-    "envox": "https://ik.imagekit.io/harshatanvi/envoxtemplate.webp?updatedAt=1732511818468"
+    "envox": "https://ik.imagekit.io/harshatanvi/envoxtemplate.webp?updatedAt=1732511818468",
+    "swavya": "https://ik.imagekit.io/harshatanvi/swavyahome.webp?updatedAt=1732706575022"
   },
   "aboutSection": {
     "tanvi": "https://static.wixstatic.com/media/4c8d80_5ce7786fa0ae4c63a8953c5280081e24~mv2.jpg/v1/fill/w_404,h_605,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_8171_JPG.jpg"
@@ -33,5 +34,9 @@
   "envox": {
     "heroimage": "https://ik.imagekit.io/harshatanvi/Envox-hero-image-desktop.webp?updatedAt=1732602422659",
     "heroimagemobile": "https://ik.imagekit.io/harshatanvi/Envox-hero-image-mobile.webp?updatedAt=1732602422481"
+  },
+  "swavya": {
+    "heroimage": "https://ik.imagekit.io/harshatanvi/swavyaheroimage.webp?updatedAt=1732706831039",
+    "heroimagemobile": "https://ik.imagekit.io/harshatanvi/swavyaheroimagemobile.webp?updatedAt=1732706830849"
   }
 }

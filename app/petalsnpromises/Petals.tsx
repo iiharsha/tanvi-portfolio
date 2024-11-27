@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import images from "@/assets/images.json";
@@ -6,6 +8,9 @@ import Pie from "./Piechart";
 import Interview from "./Interviews";
 import UserJourneyTable from "./TablePetals";
 import Personas from "./UserPersonas";
+import { StaggeredFade } from "@/components/ui/typing-effect-2";
+import { LettersPullUp } from "@/components/ui/letters-pullup";
+import { motion } from "motion/react";
 
 const petalsheroimage = images.petals.heroimage;
 const petalslogo = images.petals.logo;
@@ -13,7 +18,16 @@ const petalslogo = images.petals.logo;
 export default function Petals() {
   return (
     <main className="w-full">
-      <div className="md:relative w-full h-[60vh] md:h-[80vh] hidden md:block">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.7 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.5,
+          delay: 0.3,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        className="md:relative w-full h-[60vh] md:h-[80vh] hidden md:block"
+      >
         <Image
           src={petalsheroimage}
           alt="petals and promises image"
@@ -23,8 +37,17 @@ export default function Petals() {
           quality={90}
           priority
         />
-      </div>
-      <div className="block md:hidden">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.7 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.5,
+          delay: 0.3,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        className="block md:hidden"
+      >
         <Image
           src={images.petals.heroimagemobile}
           width={420}
@@ -36,24 +59,26 @@ export default function Petals() {
           quality={90}
           priority
         />
-      </div>
+      </motion.div>
       <div
         className="max-w-[22em] min-w-[18em] pb-[60px] xl:max-w-[80em] xl:min-w-[30em] h-full xl:mx-auto xl:mt-0
         sm:max-w-[60em] sm:min-w-[10em] sm::mx-auto"
       >
         <section className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4 max-w-5xl w-full mx-auto items-center">
           <div className="flex flex-col items-start">
-            <h2 className="text-[30px] font-normal font-zcool">Type</h2>
-            <p>Personal Project</p>
+            <StaggeredFade text="Type" />
+            <LettersPullUp text="Personal Project" />
           </div>
           <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-brown md:pl-4">
-            <h2 className="text-[30px] font-normal font-zcool">Tools</h2>
-            <p>Figma, Canva,Adobe Illustrator</p>
+            <StaggeredFade text="Tools" />
+            <LettersPullUp text="Figma, Canva, Adobe Illustrator" />
           </div>
           <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-brown md:pl-4">
-            <h2 className="text-[30px] font-normal font-zcool">Timeline</h2>
+            <StaggeredFade text="Timeline" />
+            <LettersPullUp text="1 November - 7 November 2024" />
           </div>
         </section>
+        <div className="my-8 border-t border-brown"></div>
         <section className="p-2">
           <h2 className="text-[30px] font-normal font-zcool ml-2">
             Logo & Design
@@ -69,9 +94,9 @@ export default function Petals() {
               />
             </div>
           </div>
-          <h3 className="text-center text-[21px] font-normal font-zcool">
+          <h2 className="text-center text-[21px] font-normal font-zcool">
             Logo Type : Dynamic Logo
-          </h3>
+          </h2>
           <h2 className="text-[30px] font-normal mt-9 font-zcool ml-4">
             Problem Statement
           </h2>
@@ -105,6 +130,7 @@ export default function Petals() {
             </li>
           </ul>
         </section>
+        <div className="my-8 border-t border-brown"></div>
         <h2 className="text-[30px] font-normal font-zcool ml-2 p-4">
           Solution
         </h2>
@@ -113,6 +139,7 @@ export default function Petals() {
             <Video />
           </div>
         </section>
+        <div className="my-8 border-t border-brown"></div>
         <section className="p-4">
           <h2 className="text-[30px] font-normal font-zcool ml-2">Research</h2>
           <p className="font-zcool text-[20px] ml-2">
@@ -131,6 +158,7 @@ export default function Petals() {
             <Pie />
           </div>
         </section>
+        <div className="my-8 border-t border-brown"></div>
         <section className="p-4">
           <h2 className="text-[30px] font-normal font-zcool ml-2 mt-4 mb-4">
             Interview
@@ -142,15 +170,18 @@ export default function Petals() {
           </p>
           <Interview />
         </section>
+        <div className="my-8 border-t border-brown"></div>
         <section className="overflow-x-auto">
           <h2 className="text-[30px] font-normal font-zcool ml-2 mt-4 mb-4">
             User Journey
           </h2>
           <UserJourneyTable />
         </section>
+        <div className="my-8 border-t border-brown"></div>
         <section>
           <Personas />
         </section>
+        <div className="my-8 border-t border-brown"></div>
         <section>
           <h2 className="text-[30px] font-normal font-zcool ml-2 mt-4 mb-4">
             Reflection

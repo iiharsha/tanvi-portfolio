@@ -1,6 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import images from "../assets/images.json";
+import { motion } from "motion/react";
+import { TypingEffect } from "./ui/typing-effect";
+import { EyeCatchingButton } from "./ui/ShinningButton";
 
 const cartoonTanvi = images.homepage.cartoonTanvi;
 
@@ -8,7 +13,16 @@ export default function Intro() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-[1fr_2fr] sm:gap-[5rem] pb-28px sm:pb-[90px] pt-[50px] box-border">
       {/* Image Section */}
-      <div className="flex items-center justify-center h-[400px] md:h-[500px] lg:h-[600px]">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.7 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.5,
+          delay: 0.3,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        className="flex items-center justify-center h-[400px] md:h-[500px] lg:h-[600px] ml-14"
+      >
         <Image
           src={cartoonTanvi}
           alt="self portrait"
@@ -18,20 +32,24 @@ export default function Intro() {
           className="h-[300px] w-[300px] sm:h-[400px] sm:w-[400px] md:h-[500px] md:w-[500px] lg:h-[600px] lg:w-[600px] rounded-full object-cover"
           priority
         />
-      </div>
+      </motion.div>
 
       {/* Text Section */}
       <div className="md:h-80 md:mt-16 flex flex-col justify-center items-start">
-        <h1 className="pt-0 sm:pt-32 font-zcool leading-9 text-brown text-[29px] sm:text-[46px] font-normal mt-0 mb-2 max-w-[800px] box-border">
-          Hey,
-          <span className="text-[50px] sm:text-[58px]">This is Tanvi,</span> a
-          UI/UX designer. I design for the future of Technology.
-        </h1>
-        <div className="mb-9 p-4 mt-4">
-          <a className="font-zcool text-[18px] text-brown no-underline rounded-full border border-brown py-4 px-6 bg-beige hover:bg-hovercolor mx-1.5 mb-9">
+        <TypingEffect
+          text="Hey, This is Tanvi, a UI/UX designer.
+          I Design for the future of Technology"
+        />
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          className="mb-9 p-4 mt-4 cursor-pointer"
+        >
+          <EyeCatchingButton className="font-zcool text-[18px] px-6 py-4 mx-1.5 mb-9">
             Let&apos;s Connect
-          </a>
-        </div>
+          </EyeCatchingButton>
+        </motion.div>
       </div>
     </div>
   );

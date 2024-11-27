@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import images from "@/assets/images.json";
 import React from "react";
 import Link from "next/link";
+import { motion } from "motion/react";
+import { StaggeredFade } from "@/components/ui/typing-effect-2";
+import { LettersPullUp } from "@/components/ui/letters-pullup";
 
 const envoxheroimage = images.envox.heroimage;
 const envoxheroimagemobile = images.envox.heroimagemobile;
@@ -10,7 +15,16 @@ export default function EnvoxPage() {
   return (
     <main className="w-full">
       <section>
-        <div className="sm:relative w-full h-[60vh] sm:h-[80vh] hidden sm:block">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.7 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className="sm:relative w-full h-[60vh] sm:h-[80vh] hidden sm:block"
+        >
           <Image
             src={envoxheroimage}
             alt="petals and promises image"
@@ -20,8 +34,17 @@ export default function EnvoxPage() {
             quality={90}
             priority
           />
-        </div>
-        <div className="block sm:hidden">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.7 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className="block sm:hidden"
+        >
           <Image
             src={envoxheroimagemobile}
             width={420}
@@ -33,24 +56,24 @@ export default function EnvoxPage() {
             quality={90}
             priority
           />
-        </div>
+        </motion.div>
       </section>
       <div
         className="max-w-[22em] min-w-[18em] pb-[60px] xl:max-w-[80em] xl:min-w-[30em] h-full xl:mx-auto xl:mt-0
       sm:max-w-[60em] sm:min-w-[10em] sm::mx-auto"
       >
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 max-w-5xl w-full mx-auto">
-          <div className="flex flex-col">
-            <h2 className="text-[30px] font-normal font-zcool m-2">Type</h2>
-            <p>Internship</p>
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4 max-w-5xl w-full mx-auto items-center">
+          <div className="flex flex-col items-start">
+            <StaggeredFade text="Type" />
+            <LettersPullUp text="Intership" />
           </div>
-          <div className="flex flex-col border-t md:border-t-0 md:border-l border-brown md:pl-4">
-            <h2 className="text-[30px] font-normal font-zcool m-2">Tools</h2>
-            <p>Figma, Canva, Adobe Illustrator</p>
+          <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-brown md:pl-4">
+            <StaggeredFade text="Tools" />
+            <LettersPullUp text="Figma, Canva, Adobe Illustrator" />
           </div>
-          <div className="flex flex-col border-t md:border-t-0 md:border-l border-brown md:pl-4">
-            <h2 className="text-[30px] font-normal font-zcool m-2">Timeline</h2>
-            <p>May 2 - August 2, 2024</p>
+          <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-brown md:pl-4">
+            <StaggeredFade text="Timeline" />
+            <LettersPullUp text="2 May - 2 August 2024" />
           </div>
         </section>
         <div className="my-8 border-t border-brown"></div>

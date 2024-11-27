@@ -1,6 +1,11 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import images from "@/assets/images.json";
+import { motion } from "motion/react";
+import { StaggeredFade } from "@/components/ui/typing-effect-2";
+import { LettersPullUp } from "@/components/ui/letters-pullup";
 
 const recensboard = images.recens.heroimage;
 const secOne = images.recens.recenslogowhite;
@@ -15,7 +20,16 @@ const secEight = images.recens.recenstag2;
 export default function Recens() {
   return (
     <main>
-      <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.7 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.5,
+          delay: 0.3,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden"
+      >
         <Image
           src={recensboard}
           alt="Recens Storefront Image"
@@ -25,7 +39,7 @@ export default function Recens() {
           quality={90}
           priority
         />
-      </div>
+      </motion.div>
       <div
         className="max-w-[22em] min-w-[18em] pb-[60px] xl:max-w-[80em] xl:min-w-[30em] h-full xl:mx-auto xl:mt-0
         sm:max-w-[60em] sm:min-w-[10em] sm::mx-auto"
@@ -34,16 +48,16 @@ export default function Recens() {
         {/* Text Section */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4 max-w-5xl w-full mx-auto items-center">
           <div className="flex flex-col items-start">
-            <h2 className="text-[30px] font-normal font-zcool">Type</h2>
-            <p>Brand Work</p>
+            <StaggeredFade text="Type" />
+            <LettersPullUp text="Brand Work" />
           </div>
           <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-brown md:pl-4">
-            <h2 className="text-[30px] font-normal font-zcool">Tools</h2>
-            <p>Figma, Canva, Illustrator</p>
+            <StaggeredFade text="Tools" />
+            <LettersPullUp text="Figma, Canva, Adobe Illustrator" />
           </div>
           <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-brown md:pl-4">
-            <h2 className="text-[30px] font-normal font-zcool">Timeline</h2>
-            <p>1st November - 7th November 2024</p>
+            <StaggeredFade text="Timeline" />
+            <LettersPullUp text="1 November - 7 November 2024" />
           </div>
         </section>
         <div className="my-8 border-t border-brown"></div>

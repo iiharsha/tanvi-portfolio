@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import images from "../assets/images.json";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 const projects = [
   {
@@ -32,7 +34,7 @@ const projects = [
     href: "/envoxwork",
   },
   {
-    src: images.projectSection.recens,
+    src: images.projectSection.swavya,
     alt: "Swavya Image",
     title: "Swavya",
     description: "Health Web Application",
@@ -44,18 +46,22 @@ export default function Work() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
       {projects.map((project, index) => (
-        <div key={index} className="overflow-hidden">
+        <div key={index}>
           <a href={project.href} className="block text-decoration-none">
-            <div className="flex items-center justify-center">
+            <motion.div
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8 }}
+              className="flex items-center justify-center"
+            >
               <Image
                 src={project.src}
                 alt={project.alt}
-                className="w-[700px] h-auto transition-transform duration-300 hover:scale-90"
+                className="w-[700px] h-auto"
                 width={400}
                 height={400}
                 quality={90}
               />
-            </div>
+            </motion.div>
             <div className="px-4">
               <h2 className="font-serif text-2xl text-black leading-6 font-normal mt-4 mb-4 border-b border-[#28282B]">
                 {project.title}
