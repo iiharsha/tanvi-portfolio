@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "motion/react";
 import { TypingEffect } from "./ui/typing-effect";
 import { EyeCatchingButton } from "./ui/ShinningButton";
+import Link from "next/link";
 
 export function IntroContent() {
   return (
@@ -25,9 +26,15 @@ export function IntroContent() {
         whileTap={{ scale: 0.95 }}
         transition={{ type: "spring", stiffness: 400, damping: 17 }}
       >
-        <EyeCatchingButton className="text-lg px-8 py-4">
-          Let&apos;s Connect
-        </EyeCatchingButton>
+        <Link
+          href="https://www.linkedin.com/in/ktanvireddy/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <EyeCatchingButton className="text-lg px-8 py-4">
+            Let&apos;s Connect
+          </EyeCatchingButton>
+        </Link>
       </motion.div>
     </motion.div>
   );

@@ -6,6 +6,7 @@ import images from "@/assets/images.json";
 import Image from "next/image";
 import { TypingEffect } from "@/components/ui/typing-effect";
 import { EyeCatchingButton } from "@/components/ui/ShinningButton";
+import Link from "next/link";
 
 const aboutImage = images.about.mainimage;
 
@@ -54,11 +55,11 @@ export default function AboutPage() {
 
             <p className="text-lg leading-relaxed mb-8">
               In my B.tech journey, I have found the perfect mix of technical
-              expertise and creative intuition. Ever since I've tried to bring
-              together experiences that are simple and intuitive helping people
-              have an easier and fun life. I worked updating website designs for
-              certain clients at Envox Media and traffic to both their site and
-              the corporation's site.
+              expertise and creative intuition. Ever since I&apos;ve tried to
+              bring together experiences that are simple and intuitive helping
+              people have an easier and fun life. I worked updating website
+              designs for certain clients at Envox Media and traffic to both
+              their site and the corporation&apos;s site.
             </p>
 
             <p className="text-lg leading-relaxed mb-8">
@@ -74,8 +75,8 @@ export default function AboutPage() {
               brand, I found out that product design and management are
               essential to capturing the principles of ideals and usefulness. A
               key goal is to apply HCI principles for improvements in the field
-              of user interface design and make my brand's web presence reflect
-              the class and grandeur of its products.
+              of user interface design and make my brand&apos;s web presence
+              reflect the class and grandeur of its products.
             </p>
 
             <p className="text-lg leading-relaxed">
@@ -90,9 +91,15 @@ export default function AboutPage() {
             whileTap={{ scale: 0.95 }}
             className="mt-8"
           >
-            <EyeCatchingButton className="text-lg px-8 py-4">
-              Let&apos;s Connect
-            </EyeCatchingButton>
+            <Link
+              href="https://www.linkedin.com/in/ktanvireddy/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <EyeCatchingButton className="text-lg px-8 py-4">
+                Let&apos;s Connect
+              </EyeCatchingButton>
+            </Link>
           </motion.div>
         </motion.div>
       </div>
