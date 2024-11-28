@@ -1,8 +1,9 @@
 "use client";
+
 import React from "react";
-import images from "../assets/images.json";
-import Image from "next/image";
+import images from "@/assets/images.json";
 import { motion } from "motion/react";
+import { ProjectCard } from "@/components/ProjectCard";
 
 const projects = [
   {
@@ -44,36 +45,16 @@ const projects = [
 
 export default function Work() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
-      {projects.map((project, index) => (
-        <div key={index}>
-          <a href={project.href} className="block text-decoration-none">
-            <motion.div
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.8 }}
-              className="flex items-center justify-center"
-            >
-              <Image
-                src={project.src}
-                alt={project.alt}
-                className="w-[700px] h-auto"
-                width={400}
-                height={400}
-                quality={90}
-                priority
-              />
-            </motion.div>
-            <div className="px-4">
-              <h2 className="font-serif text-2xl text-black leading-6 font-normal mt-4 mb-4 border-b border-[#28282B]">
-                {project.title}
-              </h2>
-              <p className="text-brown mt-[1px] pt-[3px] mb-[30px]">
-                {project.description}
-              </p>
-            </div>
-          </a>
-        </div>
-      ))}
-    </div>
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="container mx-auto px-4 py-16"
+    >
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
+        {projects.map((project, index) => (
+          <ProjectCard key={index} {...project} index={index} />
+        ))}
+      </div>
+    </motion.main>
   );
 }
