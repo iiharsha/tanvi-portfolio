@@ -13,7 +13,7 @@ const envoxheroimagemobile = images.envox.heroimagemobile;
 
 export default function EnvoxPage() {
   return (
-    <main className="w-full">
+    <main className="text-slate-300 w-full">
       <section>
         <motion.div
           initial={{ opacity: 0, scale: 0.7 }}
@@ -88,7 +88,7 @@ export default function EnvoxPage() {
               contributions and the impact of my designs.
             </p>
             <button
-              className="m-4 bg-beige text-brown hover:bg-hovercolor border border-brown rounded-full p-4 shadow-xl hover:text-[18px] focus:outline-none focus:ring-2 focus:ring-brown focus:ring-offset-2 transition-all duration-300 ease-in-out"
+              className="m-4 bg-beige text-neutral-300 hover:text-brown hover:bg-hovercolor border border-brown rounded-full p-4 shadow-xl hover:text-[18px] focus:outline-none focus:ring-2 focus:ring-brown focus:ring-offset-2 transition-all duration-300 ease-in-out"
               aria-label="View Figma Prototype"
             >
               <Link
@@ -256,7 +256,7 @@ export default function EnvoxPage() {
             Competitor Audit
           </h2>
           <button
-            className="m-4 bg-beige text-brown hover:bg-hovercolor border border-brown rounded-full p-4 shadow-xl hover:text-[18px] focus:outline-none focus:ring-2 focus:ring-brown focus:ring-offset-2 transition-all duration-300 ease-in-out"
+            className="m-4 bg-beige text-slate-300 hover:text-brown hover:bg-hovercolor border border-brown rounded-full p-4 shadow-xl hover:text-[18px] focus:outline-none focus:ring-2 focus:ring-brown focus:ring-offset-2 transition-all duration-300 ease-in-out"
             aria-label="Check it out"
           >
             <Link

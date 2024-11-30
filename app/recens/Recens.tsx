@@ -19,7 +19,7 @@ const secEight = images.recens.recenstag2;
 
 export default function Recens() {
   return (
-    <main>
+    <main className="text-slate-300">
       <motion.div
         initial={{ opacity: 0, scale: 0.7 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -61,7 +61,7 @@ export default function Recens() {
           </div>
         </section>
         <div className="my-8 border-t border-brown"></div>
-        <p className="p-4 text-[20px]">
+        <p className="p-4 text-[20px] text-slate-300">
           In this section, I have illustrated how creativity and strategic
           design led us to our logo, thank-you cards, tags, and stickers. I
           enjoy discovering Recens&apos;s essence as much as I enjoyed creating

@@ -4,8 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 import { motion } from "motion/react";
+import { usePathname } from "next/navigation";
 
 export default function NavBar() {
+  const pathname = usePathname();
   const [isClick, setIsClick] = useState(false);
 
   const toggleNavbar = () => {
@@ -15,7 +17,7 @@ export default function NavBar() {
   return (
     <div>
       {/* Spacer to prevent layout shift when navbar is fixed */}
-      <div className="h-0" />
+      <div className="font-zcool h-0" />
       <motion.nav
         initial={{ y: -200, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -43,14 +45,22 @@ export default function NavBar() {
             </div>
             {/* Desktop Navigation */}
             <div className="hidden sm:flex items-center space-x-4 mt-10 ml-auto">
+              {/* Work Button */}
               <Link href="/" passHref>
-                <button className="bg-beige text-brown hover:bg-hovercolor border border-brown hover:text-xl rounded-full p-4 transition-all duration-300 ease-in-out">
-                  Work
+                <button
+                  className={`bg-beige border border-brown rounded-full p-4 transition-all duration-300 ease-in-out
+        ${["/", "/petalsnpromises", "/recens", "/envoxwork", "/swavya"].includes(pathname) ? "bg-hovercolor text-brown" : "text-neutral-300 bg-[#212121] hover:bg-hovercolor hover:text-brown hover:text-xl"}`}
+                >
+                  Home
                 </button>
               </Link>
 
+              {/* About Button */}
               <Link href="/about" passHref>
-                <button className="bg-beige text-brown hover:bg-hovercolor border border-brown hover:text-xl rounded-full p-4 transition-all duration-300 ease-in-out">
+                <button
+                  className={`bg-beige border border-brown rounded-full p-4 transition-all duration-300 ease-in-out
+        ${pathname === "/about" ? "bg-hovercolor text-brown" : "text-neutral-300 hover:bg-hovercolor hover:text-brown hover:text-xl bg-[#212121]"}`}
+                >
                   About
                 </button>
               </Link>
@@ -60,13 +70,13 @@ export default function NavBar() {
                 href="/tanvi-final-resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-beige text-brown hover:bg-hovercolor border border-brown hover:text-xl rounded-full p-4 transition-all duration-300 ease-in-out"
+                className="bg-[#212121] text-white hover:bg-hovercolor border border-brown hover:text-brown hover:text-xl rounded-full p-4 transition-all duration-300 ease-in-out"
               >
                 Resume
               </Link>
             </div>{" "}
             {/* Mobile Navigation Toggle */}
-            <div className="md:hidden flex items-center mt-12">
+            <div className="sm:hidden flex items-center mt-12">
               <button
                 className="inline-flex items-center justify-center p-2 rounded-md text-brown hover:text-xl hover:border hover:border-brown transition-all duration-300 ease-in-out"
                 onClick={toggleNavbar}
@@ -110,24 +120,24 @@ export default function NavBar() {
         {/* Mobile Menu */}
         {isClick && (
           <div
-            className="md:hidden bg-beige transition-all duration-300 ease-in-out transform translate-x-0"
+            className="md:hidden backdrop-blur-lg transition-all duration-300 ease-in-out transform translate-x-0"
             style={{ transition: "transform 0.3s ease-out" }}
           >
             <div className="px-2 pt-6 pb-3 space-y-1 sm:px-3 font-semibold text-zcool">
               <button
-                className="text-brown block hover:bg-hovercolor hover:text-xl rounded-lg p-2 transition-all duration-300 ease-in-out"
+                className="text-neutral-300 hover:text-brown block hover:bg-hovercolor hover:text-xl rounded-lg p-2 transition-all duration-300 ease-in-out"
                 onClick={() => (window.location.href = "/")}
               >
-                Work
+                Home
               </button>
               <button
-                className="text-brown block hover:bg-hovercolor hover:text-xl rounded-lg p-2 transition-all duration-300 ease-in-out"
+                className="text-neutral-300 hover:text-brown block hover:bg-hovercolor hover:text-xl rounded-lg p-2 transition-all duration-300 ease-in-out"
                 onClick={() => (window.location.href = "/about")}
               >
                 About
               </button>
               <button
-                className="text-brown block hover:bg-hovercolor hover:text-xl rounded-lg p-2 transition-all duration-300 ease-in-out"
+                className="text-neutral-300 hover:text-brown block hover:bg-hovercolor hover:text-xl rounded-lg p-2 transition-all duration-300 ease-in-out"
                 onClick={() => (window.location.href = "/contact")}
               >
                 Contact

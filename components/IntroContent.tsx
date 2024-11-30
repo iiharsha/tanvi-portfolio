@@ -12,7 +12,7 @@ export function IntroContent() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.3 }}
-      className="flex flex-col items-start space-y-6"
+      className="flex flex-col items-start space-y-2"
     >
       <div className="max-w-2xl">
         <TypingEffect
@@ -31,7 +31,7 @@ export function IntroContent() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <EyeCatchingButton className="text-lg px-8 py-4">
+          <EyeCatchingButton className="font-zcool text-lg px-8 py-2">
             Let&apos;s Connect
           </EyeCatchingButton>
         </Link>

@@ -13,7 +13,7 @@ const swavyaheroimagemobile = images.swavya.heroimagemobile;
 
 export default function SwavyaPage() {
   return (
-    <main className="w-full">
+    <main className="w-full text-neutral-300">
       <section>
         <motion.div
           initial={{ opacity: 0, scale: 0.7 }}

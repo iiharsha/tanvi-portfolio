@@ -17,7 +17,7 @@ const petalslogo = images.petals.logo;
 
 export default function Petals() {
   return (
-    <main className="w-full">
+    <main className="w-full text-slate-300">
       <motion.div
         initial={{ opacity: 0, scale: 0.7 }}
         animate={{ opacity: 1, scale: 1 }}

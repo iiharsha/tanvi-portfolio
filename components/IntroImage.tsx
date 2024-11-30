@@ -25,7 +25,7 @@ export function IntroImage({ src, alt }: IntroImageProps) {
           src={src}
           alt={alt}
           fill
-          className="object-cover rounded-full"
+          className="object-cover rounded-full mt-8"
           sizes="(max-width: 768px) 100vw, 50vw"
           priority
           quality={90}

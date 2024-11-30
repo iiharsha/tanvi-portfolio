@@ -12,7 +12,7 @@ const aboutImage = images.about.mainimage;
 
 export default function AboutPage() {
   return (
-    <main className="container mx-auto px-4 py-16 min-h-screen">
+    <main className="text-slate-300 container mx-auto px-4 py-16 min-h-screen">
       <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 items-start">
         {/* Image Section */}
         <motion.div

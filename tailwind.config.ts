@@ -9,9 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        beige: "#FFF2D8",
-        brown: "#543310",
-        hovercolor: "#AF8F6F",
+        beige: "#0f0f0f",
+        brown: "#E90074",
+        lightblack: "##ffffff",
+        hovercolor: "#ffcce6",
       },
       fontFamily: {
         sans: ["Open Sans", "sans-serif"],
