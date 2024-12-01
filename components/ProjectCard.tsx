@@ -56,10 +56,12 @@ export function ProjectCard({
           animate={{ opacity: 1 }}
           transition={{ delay: index * 0.1 + 0.2 }}
         >
-          <h2 className="font-zcool text-white text-2xl leading-tight font-normal mb-2 border-b border-brown pb-2">
+          <h2 className="font-zcool text-blackish dark:text-whitish text-2xl leading-tight font-normal mb-2 border-b border-pink pb-2">
             {title}
           </h2>
-          <p className="text-neutral-300 text-lg">{description}</p>
+          <p className="dark:text-neutral-300 text-blackish text-lg">
+            {description}
+          </p>
         </motion.div>
       </Link>
     </motion.div>

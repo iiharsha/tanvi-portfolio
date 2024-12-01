@@ -5,6 +5,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { motion } from "motion/react";
 import { usePathname } from "next/navigation";
+import ThemeToggle from "./ThemeToggle";
 
 export default function NavBar() {
   const pathname = usePathname();
@@ -34,10 +35,10 @@ export default function NavBar() {
             <div className="flex">
               <Link href="/">
                 <Image
-                  src="/ktr-final.png"
+                  src="/ktr-final.webp"
                   alt="Logo"
-                  width={150}
-                  height={150}
+                  width={319}
+                  height={438}
                   className="h-auto w-[150px] top-[-25px] left-[8px] absolute"
                   priority
                 />
@@ -46,6 +47,9 @@ export default function NavBar() {
             {/* Desktop Navigation */}
             <div className="hidden sm:flex items-center space-x-4 mt-10 ml-auto">
               {/* Work Button */}
+              <div className="px-4">
+                <ThemeToggle />
+              </div>
               <Link href="/" passHref>
                 <button
                   className={`bg-beige border border-brown rounded-full p-4 transition-all duration-300 ease-in-out
@@ -78,7 +82,7 @@ export default function NavBar() {
             {/* Mobile Navigation Toggle */}
             <div className="sm:hidden flex items-center mt-12">
               <button
-                className="inline-flex items-center justify-center p-2 rounded-md text-brown hover:text-xl hover:border hover:border-brown transition-all duration-300 ease-in-out"
+                className="inline-flex items-center justify-center p-2 rounded-md dark:text-pink hover:text-xl hover:border hover:border-pink transition-all duration-400 ease-in-out"
                 onClick={toggleNavbar}
               >
                 {isClick ? (
@@ -120,28 +124,29 @@ export default function NavBar() {
         {/* Mobile Menu */}
         {isClick && (
           <div
-            className="md:hidden backdrop-blur-lg transition-all duration-300 ease-in-out transform translate-x-0"
+            className="md:hidden backdrop-blur-sm text-blackish dark:text-whitish transition-all duration-300 ease-in-out transform translate-x-0 mt-4"
             style={{ transition: "transform 0.3s ease-out" }}
           >
             <div className="px-2 pt-6 pb-3 space-y-1 sm:px-3 font-semibold text-zcool">
               <button
-                className="text-neutral-300 hover:text-brown block hover:bg-hovercolor hover:text-xl rounded-lg p-2 transition-all duration-300 ease-in-out"
+                className="hover:text-brown block hover:bg-hovercolor hover:text-xl rounded-lg p-2 transition-all duration-300 ease-in-out"
                 onClick={() => (window.location.href = "/")}
               >
                 Home
               </button>
               <button
-                className="text-neutral-300 hover:text-brown block hover:bg-hovercolor hover:text-xl rounded-lg p-2 transition-all duration-300 ease-in-out"
+                className="hover:text-brown block hover:bg-hovercolor hover:text-xl rounded-lg p-2 transition-all duration-300 ease-in-out"
                 onClick={() => (window.location.href = "/about")}
               >
                 About
               </button>
               <button
-                className="text-neutral-300 hover:text-brown block hover:bg-hovercolor hover:text-xl rounded-lg p-2 transition-all duration-300 ease-in-out"
+                className="hover:text-brown block hover:bg-hovercolor hover:text-xl rounded-lg p-2 transition-all duration-300 ease-in-out"
                 onClick={() => (window.location.href = "/contact")}
               >
                 Contact
               </button>
+              <ThemeToggle />
             </div>
           </div>
         )}

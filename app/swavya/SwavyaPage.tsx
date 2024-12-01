@@ -13,7 +13,7 @@ const swavyaheroimagemobile = images.swavya.heroimagemobile;
 
 export default function SwavyaPage() {
   return (
-    <main className="w-full text-neutral-300">
+    <main className="w-full dark:text-whitish">
       <section>
         <motion.div
           initial={{ opacity: 0, scale: 0.7 }}
@@ -64,21 +64,24 @@ export default function SwavyaPage() {
       >
         <section className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4 max-w-5xl w-full mx-auto items-center">
           <div className="flex flex-col items-start">
-            <StaggeredFade text="Type" />
+            <StaggeredFade text="Type" className="text-pink" />
             <LettersPullUp text="Hackathon" />
           </div>
           <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-brown md:pl-4">
-            <StaggeredFade text="Tools" />
+            <StaggeredFade text="Tools" className="text-pink" />
             <LettersPullUp text="HTML, CSS, Javascript" />
           </div>
           <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-brown md:pl-4">
-            <StaggeredFade text="Timeline" />
+            <StaggeredFade text="Timeline" className="text-pink" />
             <LettersPullUp text="24hrs" />
           </div>
         </section>
         <div className="my-8 border-t border-brown"></div>
         <section className="-2">
-          <StaggeredFade text="Swavya" className="text-[30px] mt-9 ml-4" />
+          <StaggeredFade
+            text="Swavya"
+            className="text-[30px] mt-9 ml-4 text-pink"
+          />
           <p className="pt-4 px-4 text-[20px]">
             Swavya is a holistic health web application designed to integrate
             personalized exercise routines and diet plans with an innovative

@@ -14,7 +14,7 @@ export function IntroContent() {
       transition={{ duration: 0.6, delay: 0.3 }}
       className="flex flex-col items-start space-y-2"
     >
-      <div className="max-w-2xl">
+      <div className="max-w-2xl text-pink">
         <TypingEffect
           text="Hey, This is Tanvi, a UI/UX designer.
           I Design for the future of Technology"

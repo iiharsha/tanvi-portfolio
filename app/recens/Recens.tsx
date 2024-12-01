@@ -19,7 +19,7 @@ const secEight = images.recens.recenstag2;
 
 export default function Recens() {
   return (
-    <main className="text-slate-300">
+    <main className="dark:text-whitish">
       <motion.div
         initial={{ opacity: 0, scale: 0.7 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -48,20 +48,20 @@ export default function Recens() {
         {/* Text Section */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4 max-w-5xl w-full mx-auto items-center">
           <div className="flex flex-col items-start">
-            <StaggeredFade text="Type" />
+            <StaggeredFade text="Type" className="text-pink" />
             <LettersPullUp text="Brand Work" />
           </div>
-          <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-brown md:pl-4">
-            <StaggeredFade text="Tools" />
+          <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-pink md:pl-4">
+            <StaggeredFade text="Tools" className="text-pink" />
             <LettersPullUp text="Figma, Canva, Adobe Illustrator" />
           </div>
-          <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-brown md:pl-4">
-            <StaggeredFade text="Timeline" />
+          <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-pink md:pl-4">
+            <StaggeredFade text="Timeline" className="text-pink" />
             <LettersPullUp text="1 November - 7 November 2024" />
           </div>
         </section>
-        <div className="my-8 border-t border-brown"></div>
-        <p className="p-4 text-[20px] text-slate-300">
+        <div className="my-8 border-t border-pink"></div>
+        <p className="p-4 text-[20px]">
           In this section, I have illustrated how creativity and strategic
           design led us to our logo, thank-you cards, tags, and stickers. I
           enjoy discovering Recens&apos;s essence as much as I enjoyed creating
@@ -69,7 +69,9 @@ export default function Recens() {
         </p>
 
         <section className="p-4 ml-4">
-          <h2 className="text-[30px] font-normal font-zcool">Logo & Tagline</h2>
+          <h2 className="text-[30px] font-normal font-zcool text-pink">
+            Logo & Tagline
+          </h2>
           <p className="font-zcool text-[20px]">
             The Recens logo utilizes Tenor Sans to convey a sense of modern
             sophistication, while the tagline &quot;One of a Kind&quot; is
@@ -100,9 +102,9 @@ export default function Recens() {
             </div>
           </div>
         </section>
-        <div className="my-8 border-t border-brown"></div>
+        <div className="my-8 border-t border-pink"></div>
         <section className="p-4 ml-4">
-          <h2 className="text-[30px] font-normal font-zcool">
+          <h2 className="text-[30px] font-normal font-zcool text-pink">
             Package Designing
           </h2>
           <p className="font-zcool text-[20px]">
@@ -131,9 +133,9 @@ export default function Recens() {
             </div>
           </div>
         </section>
-        <div className="my-8 border-t border-brown"></div>
+        <div className="my-8 border-t border-pink"></div>
         <section className="p-4 ml-4">
-          <h2 className="text-[30px] font-normal font-zcool">
+          <h2 className="text-[30px] font-normal font-zcool text-pink">
             Thank-You Cards
           </h2>
           <p className="font-zcool text-[20px]">
@@ -162,9 +164,9 @@ export default function Recens() {
             </div>
           </div>
         </section>
-        <div className="my-8 border-t border-brown"></div>
+        <div className="my-8 border-t border-pink"></div>
         <section className="p-4 ml-4">
-          <h2 className="text-[30px] font-normal font-zcool">
+          <h2 className="text-[30px] font-normal font-zcool text-pink">
             Tags & Stickers
           </h2>
           <div className="flex flex-col md:flex-col justify-center items-center space-y-4 md:space-y-[40px] md:space-x-0 mt-10">

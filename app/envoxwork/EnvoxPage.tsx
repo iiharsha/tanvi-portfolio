@@ -13,7 +13,7 @@ const envoxheroimagemobile = images.envox.heroimagemobile;
 
 export default function EnvoxPage() {
   return (
-    <main className="text-slate-300 w-full">
+    <main className="dark:text-whitish w-full">
       <section>
         <motion.div
           initial={{ opacity: 0, scale: 0.7 }}
@@ -64,22 +64,24 @@ export default function EnvoxPage() {
       >
         <section className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4 max-w-5xl w-full mx-auto items-center">
           <div className="flex flex-col items-start">
-            <StaggeredFade text="Type" />
+            <StaggeredFade text="Type" className="text-pink" />
             <LettersPullUp text="Intership" />
           </div>
-          <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-brown md:pl-4">
-            <StaggeredFade text="Tools" />
+          <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-pink md:pl-4">
+            <StaggeredFade text="Tools" className="text-pink" />
             <LettersPullUp text="Figma, Canva, Adobe Illustrator" />
           </div>
-          <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-brown md:pl-4">
-            <StaggeredFade text="Timeline" />
+          <div className="flex flex-col items-start border-t md:border-t-0 md:border-l border-pink md:pl-4">
+            <StaggeredFade text="Timeline" className="text-pink" />
             <LettersPullUp text="2 May - 2 August 2024" />
           </div>
         </section>
-        <div className="my-8 border-t border-brown"></div>
+        <div className="my-8 border-t border-pink"></div>
         <section className="p-4 ml-6">
           <div>
-            <h1 className="text-[30px] font-normal font-zcool ml-2">My Work</h1>
+            <h1 className="text-[30px] font-normal font-zcool ml-2 text-pink">
+              My Work
+            </h1>
             <p className="text-[20px] ml-2">
               Welcome to my project page! Here, you&apos;ll find the context and
               background of my latest work at Envox Media, where I had the
@@ -88,7 +90,7 @@ export default function EnvoxPage() {
               contributions and the impact of my designs.
             </p>
             <button
-              className="m-4 bg-beige text-neutral-300 hover:text-brown hover:bg-hovercolor border border-brown rounded-full p-4 shadow-xl hover:text-[18px] focus:outline-none focus:ring-2 focus:ring-brown focus:ring-offset-2 transition-all duration-300 ease-in-out"
+              className="m-4 bg-beige text-pink hover:text-pink hover:bg-hovercolor border border-pink rounded-full p-4 shadow-xl hover:text-[18px] focus:outline-none focus:ring-2 focus:ring-pink focus:ring-offset-2 transition-all duration-300 ease-in-out"
               aria-label="View Figma Prototype"
             >
               <Link
@@ -102,13 +104,13 @@ export default function EnvoxPage() {
             </button>
           </div>
         </section>
-        <div className="my-8 border-t border-brown"></div>
+        <div className="my-8 border-t border-pink"></div>
         <section className="p-4 ml-6">
           <div>
-            <h1 className="text-[30px] font-normal font-zcool ml-2">
+            <h1 className="text-[30px] font-normal font-zcool ml-2 text-pink">
               User Research
             </h1>
-            <h1 className="text-[30px] font-normal font-zcool ml-2 mb-2">
+            <h1 className="text-[30px] font-normal font-zcool ml-2 mb-2 text-pink">
               Summary
             </h1>
             <p className="text-[20px] ml-2">
@@ -128,37 +130,37 @@ export default function EnvoxPage() {
             </p>
           </div>
         </section>
-        <div className="my-8 border-t border-brown"></div>
+        <div className="my-8 border-t border-pink"></div>
         <section className="p-4 ml-6">
           <div>
-            <h1 className="text-[30px] font-normal font-zcool ml-2 mb-2">
+            <h1 className="text-[30px] font-normal font-zcool ml-2 mb-2 text-pink">
               Pain Points
             </h1>
 
             <ol className="list-decimal text-[20px] ml-6">
               <li className="mb-2">
-                <strong className="text-brown">
+                <span className="text-pink">
                   Limited Understanding of Digital Marketing:
-                </strong>{" "}
+                </span>{" "}
                 Design user-friendly and educational elements to empower users
                 like Alex to navigate digital marketing complexities
                 effectively.
               </li>
               <li className="mb-2">
-                <strong className="text-brown">Time Constraints:</strong>{" "}
-                Implement streamlined workflows and automation features to help
-                users like Sarah save time in their digital marketing efforts.
+                <span className="text-pink">Time Constraints:</span> Implement
+                streamlined workflows and automation features to help users like
+                Sarah save time in their digital marketing efforts.
               </li>
               <li className="mb-2">
-                <strong className="text-brown">
+                <span className="text-pink">
                   Competition and Lead Generation:
-                </strong>{" "}
+                </span>{" "}
                 Design targeted and data-driven marketing strategies to help
                 users like Ryan stand out in a crowded market and attract
                 high-quality leads efficiently.
               </li>
               <li className="mb-2">
-                <strong className="text-brown">Tech Overwhelm:</strong> Simplify
+                <span className="text-pink">Tech Overwhelm:</span> Simplify
                 complex technology and offer guided onboarding experiences to
                 alleviate user anxiety and improve usability for users like
                 Alex.
@@ -166,9 +168,11 @@ export default function EnvoxPage() {
             </ol>
           </div>
         </section>
-        <div className="my-8 border-t border-brown"></div>
+        <div className="my-8 border-t border-pink"></div>
         <section className="p-4">
-          <h2 className="text-[30px] font-normal font-zcool">User Personas</h2>
+          <h2 className="text-[30px] font-normal font-zcool text-pink">
+            User Personas
+          </h2>
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-[40px] mt-10 ml-4">
             <div className="flex-1 max-w-full shadow-xl transform transition-all duration-300 ease-in-out hover:scale-150 hover:z-10">
               <Image
@@ -199,9 +203,11 @@ export default function EnvoxPage() {
             </div>
           </div>
         </section>
-        <div className="my-8 border-t border-brown"></div>
+        <div className="my-8 border-t border-pink"></div>
         <section className="p-4 ml-6">
-          <h2 className="text-[30px] font-normal font-zcool">Wireframes</h2>
+          <h2 className="text-[30px] font-normal font-zcool text-pink">
+            Wireframes
+          </h2>
           <div className="flex flex-col md:flex-row justify-center items-center gap-2 md:space-x-0 mt-10">
             <div className="flex-1 max-w-full shadow-xl transform transition-all duration-300 ease-in-out hover:scale-150 hover:z-10">
               <Image
@@ -250,13 +256,13 @@ export default function EnvoxPage() {
             </div>
           </div>
         </section>
-        <div className="my-8 border-t border-brown"></div>
+        <div className="my-8 border-t border-pink"></div>
         <section className="p-4">
-          <h2 className="text-[30px] font-normal font-zcool">
+          <h2 className="text-[30px] font-normal font-zcool text-pink">
             Competitor Audit
           </h2>
           <button
-            className="m-4 bg-beige text-slate-300 hover:text-brown hover:bg-hovercolor border border-brown rounded-full p-4 shadow-xl hover:text-[18px] focus:outline-none focus:ring-2 focus:ring-brown focus:ring-offset-2 transition-all duration-300 ease-in-out"
+            className="m-4 bg-beige text-pink hover:text-pink hover:bg-hovercolor border border-pink rounded-full p-4 shadow-xl hover:text-[18px] focus:outline-none focus:ring-2 focus:ring-pink focus:ring-offset-2 transition-all duration-300 ease-in-out"
             aria-label="Check it out"
           >
             <Link
