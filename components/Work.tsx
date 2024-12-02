@@ -11,7 +11,7 @@ const projects = [
     alt: "Recens Logo",
     title: "therecens.com",
     description: "Best Shopping Experience",
-    href: "https://therecens.com",
+    href: "/recensshop",
   },
   {
     src: images.projectSection.recens,

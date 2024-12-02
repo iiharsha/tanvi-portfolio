@@ -53,7 +53,7 @@ export default function NavBar() {
               <Link href="/" passHref>
                 <button
                   className={`bg-beige border border-brown rounded-full p-4 transition-all duration-300 ease-in-out
-        ${["/", "/petalsnpromises", "/recens", "/envoxwork", "/swavya"].includes(pathname) ? "bg-hovercolor text-brown" : "text-neutral-300 bg-[#212121] hover:bg-hovercolor hover:text-brown hover:text-xl"}`}
+        ${"/".includes(pathname) ? "bg-hovercolor text-brown" : "text-neutral-300 bg-[#212121] hover:bg-hovercolor hover:text-brown hover:text-xl"}`}
                 >
                   Home
                 </button>

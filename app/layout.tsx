@@ -29,12 +29,12 @@ export default function RootLayout({
         />
         {/* Link to Google Fonts */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Poppins:wght@400;600&family=Roboto:wght@400;700&family=ZCOOL+XiaoWei&display=swap"
+          href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap"
           rel="stylesheet"
         />
       </head>
       <body
-        className={`${inter.className} bg-beige flex flex-col min-h-screen`}
+        className={`${inter.className} dark:bg-blackish bg-whitish flex flex-col min-h-screen`}
       >
         <NavBar />
         {children}

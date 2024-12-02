@@ -12,7 +12,7 @@ const aboutImage = images.about.mainimage;
 
 export default function AboutPage() {
   return (
-    <main className="text-slate-300 container mx-auto px-4 py-16 min-h-screen">
+    <main className="dark:text-whitish text-blackish container mx-auto px-4 py-16 min-h-screen">
       <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 items-start">
         {/* Image Section */}
         <motion.div
@@ -40,7 +40,7 @@ export default function AboutPage() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="flex-1"
         >
-          <div className="mb-6">
+          <div className="mb-6 text-pink">
             <TypingEffect text="About Me" />
           </div>
 
@@ -54,12 +54,12 @@ export default function AboutPage() {
             </p>
 
             <p className="text-lg leading-relaxed mb-8">
-              In my B.tech journey, I have found the perfect mix of technical
-              expertise and creative intuition. Ever since I&apos;ve tried to
-              bring together experiences that are simple and intuitive helping
-              people have an easier and fun life. I worked updating website
-              designs for certain clients at Envox Media and traffic to both
-              their site and the corporation&apos;s site.
+              In my undergraduate journey, I have found the perfect mix of
+              technical expertise and creative intuition. Ever since I&apos;ve
+              tried to bring together experiences that are simple and intuitive
+              helping people have an easier and fun life. I worked updating
+              website designs for certain clients at Envox Media and helped in
+              boosting traffic to their site and the corporation&apos;s site.
             </p>
 
             <p className="text-lg leading-relaxed mb-8">
@@ -80,7 +80,7 @@ export default function AboutPage() {
             </p>
 
             <p className="text-lg leading-relaxed">
-              Besides the digital world, my other interests include culinary,
+              Besides the digital world, my other interests include food,
               traveling, and dancing. I try to find beauty in everyday moments
               that inspire me and my work.
             </p>
